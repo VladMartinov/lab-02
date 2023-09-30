@@ -4,11 +4,13 @@ html {
 }
 
 body {
-  min-height: 100vh; /* sticky footer */
-  display: flex; /* sticky footer */
-  flex-direction: column; /* sticky footer */
+  /* sticky footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* /sticky footer */
 
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: $black-color;
   font-size: 16px;
   line-height: 1.6875;
@@ -84,7 +86,6 @@ section {
 .footer {
   margin-top: auto; /* sticky footer */
 
-  /* Just for fun */
   text-align: center;
   background-color: #e2e2e2;
   padding: 50px 0;
