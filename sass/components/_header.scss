@@ -1,0 +1,42 @@
+.header {
+  background-color: #ffffff;
+
+  &-top {
+    padding: 25px 0;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &-bottom {
+    padding: 20px 0;
+  }
+}
+
+.header__logo {
+  margin-right: 45px;
+}
+.header-search {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.header-cart  {
+  margin-right: 15px;
+}
+
+.header-nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+
+  & a {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #222222;
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+}

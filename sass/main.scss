@@ -5,7 +5,14 @@
 @import "./base/reset";
 @import "./base/base";
 
-// Blocks
-@import "./components/header";
+// Components
+@import "./components/button";
+@import "./components/input";
+
 @import "./components/logo";
+
+@import "./components/header";
 @import "./components/footer";
+
+// Pages
+@import "./pages/collection";

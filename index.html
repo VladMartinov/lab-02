@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title and SEO -->
-		<title>Старт</title>
+		<title>BRAND - Коллекция</title>
 		<meta name="description" content="Описание страницы" />
 		<meta name="keywords" content="ключевые слова, фразы" />
 
@@ -22,10 +22,60 @@
 	</head>
 	<body>
 		<header class="header">
-			<h1>Header</h1>
-			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			<div class="header-top">
+				<div class="container container--flex">
+					<div class="header__logo logo">
+						<img src="./assets/images/logo.png" alt="Logo image">
+
+						<p>Bran<span>d</span></p>
+					</div>
+
+					<div class="header-search">
+						<button class="btn btn-def btn-dropdown search"><span>Browse</span><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+
+						<div class="search__input">
+							<input type="text" class="input" placeholder="Search for item...">
+
+							<button class="btn btn-icon btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</div>
+					</div>
+
+					<button class="header-cart btn btn-icon"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></button>
+					<button class="btn btn-primary btn-dropdown"><span>My Account</span><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="container">
+					<nav class="header-nav">
+						<a href="#!">Home</a>
+						<a href="#!">Man</a>
+						<a href="#!">Women</a>
+						<a href="#!">Kids</a>
+						<a href="#!">Accoseriese</a>
+						<a href="#!">Featured</a>
+						<a href="#!">Hot deals</a>
+					</nav>
+				</div>
+			</div>
 		</header>
-		<main class="main">Main</main>
+
+		<main class="collection">
+      <section class="collection-slider">
+        <div class="collection-slider-top">
+          <div class="container container--flex">
+            <h1 class="collection-slider__title title-1">New arrivals</h1>
+  
+            <div class="collection-select">
+              <span class="collection-select__item">Home</span>
+              <span class="collection-select__item">Men</span>
+              <span class="collection-select__item active">New arrivals</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
 		<footer class="footer">Footer</footer>
 	</body>
 </html>

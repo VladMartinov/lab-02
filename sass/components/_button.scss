@@ -1,0 +1,47 @@
+.btn {
+  padding: 3px 12px 3px 12px;
+  border-radius: 3px;
+  height: 38px;
+
+  & span {
+    line-height: 32px;
+
+    &:not(:last-child) {
+      margin-right: 9px;
+    }
+  }
+
+  &-def {
+    border: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    color: #222222;
+
+    span {
+      font-weight: 300;
+    }
+  }
+  &-primary {
+    background-color: #f16d7f;
+    color: #ffffff;
+  }
+  &-icon {
+
+
+    &.btn-search {
+      border: 1px solid #e6e6e6;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-left: none;
+      color: #a4a4a4;
+    }
+  }
+  &-dropdown {
+    padding-left: 16px;
+  }
+
+  &.search {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
