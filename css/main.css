@@ -3078,6 +3078,13 @@
   color: #f16d7f;
 }
 
+.title-3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  color: #4d4d4d;
+}
+
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -3338,6 +3345,51 @@ section {
   color: #f16d7f;
 }
 
+.slider {
+  position: relative;
+  height: 777px;
+  background-color: #f7f7f7;
+}
+
+.slider-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__item {
+  height: 100%;
+  width: 600px;
+}
+.slider__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__arrow-left,
+.slider__arrow-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d8d8d8;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.slider__arrow-left {
+  left: 0;
+}
+
+.slider__arrow-right {
+  right: 0;
+}
+
 .header {
   background-color: #ffffff;
 }
@@ -3378,6 +3430,11 @@ section {
   margin-right: 45px;
 }
 
+.collection {
+  background-color: #ffffff;
+}
+
+/* Slider section */
 .collection-slider {
   margin-bottom: -85px;
 }
@@ -3413,6 +3470,79 @@ section {
 .collection-select__item:not(:last-child)::after {
   content: "/";
   margin: 0 0.25em;
+}
+
+/* Card info section */
+.collection-card {
+  margin-bottom: 120px;
+}
+.collection-card__wrapper {
+  padding: 70px 260px 120px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.collection-card__type {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+.collection-card__type::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 3px;
+  width: 63px;
+  background-color: #f16d7f;
+}
+
+.collection-card__title {
+  margin-bottom: 65px;
+}
+
+.collection-card__desc {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.collection-card__desc-text {
+  margin-bottom: 30px;
+}
+
+.collection-card-params {
+  margin: 0 auto 35px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.collection-card-params > * {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  color: #b9b9b9;
+  font-weight: 700;
+}
+.collection-card-params > * span {
+  color: #2f2f2f;
+}
+.collection-card-params > *:not(:last-child) {
+  margin-right: 40px;
+}
+
+.collection-card__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f16d7f;
 }
 
 /*# sourceMappingURL=main.css.map */

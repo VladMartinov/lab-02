@@ -1,3 +1,9 @@
+.collection {
+  background-color: #ffffff;
+}
+
+/* Slider section */
+
 .collection-slider {
   margin-bottom: -85px;
 }
@@ -33,4 +39,89 @@
     content: "/";
     margin: 0 0.25em;
   }
+}
+
+/* Card info section */
+
+.collection-card {
+  margin-bottom: 120px;
+
+  &__wrapper {
+    padding: 70px 260px 120px;
+
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    text-align: center;
+  }
+}
+
+.collection-card__type {
+  position: relative;
+  display: inline-block;
+
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid #eaeaea;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #f16d7f;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    height: 3px;
+    width: 63px;
+
+    background-color: #f16d7f;
+  }
+}
+.collection-card__title {
+  margin-bottom: 65px;
+}
+
+.collection-card__desc {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.collection-card__desc-text {
+  margin-bottom: 30px;
+}
+.collection-card-params {
+  margin: 0 auto 35px;
+
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+
+  & > * {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    color: #b9b9b9;
+    font-weight: 700;
+
+    span {
+      color: #2f2f2f;
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+.collection-card__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f16d7f;
 }
