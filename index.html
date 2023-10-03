@@ -33,11 +33,9 @@
 					<div class="header-search">
 						<button class="btn btn-def btn-dropdown search"><span>Browse</span><i class="fa fa-angle-down" aria-hidden="true"></i></button>
 
-						<div class="search__input">
-							<input type="text" class="input" placeholder="Search for item...">
+						<input type="text" class="input header-search__input" placeholder="Search for item...">
 
-							<button class="btn btn-icon btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
-						</div>
+						<button class="btn btn-icon btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
 					</div>
 
 					<button class="header-cart btn btn-icon"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></button>
@@ -64,7 +62,7 @@
 			<section class="collection-slider">
 				<div class="collection-slider-top">
 					<div class="container container--flex">
-						<h1 class="collection-slider__title title-1">New arrivals</h1>
+						<h2 class="collection-slider__title title-2">New arrivals</h2>
 	
 						<div class="collection-select">
 							<span class="collection-select__item">Home</span>
@@ -90,7 +88,7 @@
 				<div class="container">
 					<div class="collection-card__wrapper">
 						<span class="collection-card__type">women collection</span>
-						<h3 class="collection-card__title title-3">Moschino cheap and chic</h3>
+						<h4 class="collection-card__title title-4">Moschino cheap and chic</h4>
 
 						<div class="collection-card__desc">
 							<p class="collection-card__desc-text">
@@ -104,7 +102,94 @@
 							</div>
 							<span class="collection-card__price">$561</span>
 						</div>
+
+						<form class="collection-settings">
+							<div class="collection-settings__wrapper">
+								<fieldset class="collection-settings__input">
+								 <legend class="collection-settings__input-title">Choose color</legend>
+								 <div class="select">
+									 <button class="select__btn" type="button">
+										 <div class="select__btn-color pink"></div>
+										 <span class="select__btn-text">Red</span>
+										 <i class="fa fa-angle-down" aria-hidden="true"></i>
+									 </button>
+								 </div>
+							 </fieldset>
+
+							 <fieldset class="collection-settings__input">
+								 <legend class="collection-settings__input-title">Choose size</legend>
+								 <div class="select">
+									 <button class="select__btn" type="button">
+										 <span class="select__btn-text">XXL</span>
+										 <i class="fa fa-angle-down" aria-hidden="true"></i>
+									 </button>
+								 </div>
+							 </fieldset>
+
+							 <fieldset class="collection-settings__input">
+								 <legend class="collection-settings__input-title">Quantity</legend>
+								 <input type="number" class="input" placeholder="2">
+							 </fieldset>
+							</div>
+
+							<button type="submit" class="collection-settings__submit">
+								<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+								<span class="collection-settings__submit-text">Add to cart</span>
+							</button>
+						</form>
 					</div>
+				</div>
+			</section>
+
+			<section class="collection-offers">
+				<div class="container">
+					<h2 class="collection-offers__title title-2 black">You may like also</h2>
+
+					<ul class="collection-offers__list">
+						<!-- Collection card -->
+						<div class="collection-item">
+							<img src="./assets/images/cards/card-01.png" alt="Collection card 01" class="collection-item__image">
+	
+							<div class="collection-item__desc">
+								<p class="collection-item__desc-title">Blaze leggings</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</div>
+						<!-- //Collection card -->
+	
+						<!-- Collection card -->
+						<div class="collection-item">
+							<img src="./assets/images/cards/card-02.png" alt="Collection card 02" class="collection-item__image">
+	
+							<div class="collection-item__desc">
+								<p class="collection-item__desc-title">Alexa sweater</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</div>
+						<!-- //Collection card -->
+	
+						<!-- Collection card -->
+						<div class="collection-item">
+							<img src="./assets/images/cards/card-03.png" alt="Collection card 03" class="collection-item__image">
+	
+							<div class="collection-item__desc">
+								<p class="collection-item__desc-title">Agnes top</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</div>
+						<!-- //Collection card -->
+	
+						<!-- Collection card -->
+						<div class="collection-item">
+							<img src="./assets/images/cards/card-04.png" alt="Collection card 04" class="collection-item__image">
+	
+							<div class="collection-item__desc">
+								<p class="collection-item__desc-title">Sylva sweater</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</div>
+						<!-- //Collection card -->
+					</ul>
 				</div>
 			</section>
 		</main>

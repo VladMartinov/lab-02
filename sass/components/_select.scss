@@ -1,0 +1,39 @@
+.select {
+  width: 100%;
+}
+.select__btn {
+  padding: 7px 10px 7px 15px;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 38px;
+
+  border: 1px solid #eaeaea;
+  color: #bcbcbc;
+
+  &-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+
+    background-color: #ffffff;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    &.pink {
+      background-color: #ef5b70;
+    }
+  }
+
+  &-text {
+    font-size: 13px;
+    line-height: 24px;
+
+    &:not(:last-child) {
+      margin-right: auto;
+    }
+  }
+}

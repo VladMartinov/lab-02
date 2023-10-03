@@ -18,6 +18,10 @@
   margin-right: auto;
   display: flex;
   align-items: center;
+
+  &__input {
+    width: 280px;
+  }
 }
 .header-cart  {
   margin-right: 15px;
