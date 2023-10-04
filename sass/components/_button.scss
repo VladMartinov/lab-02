@@ -44,4 +44,19 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
+
+  &.subscribe {
+    padding: 0 20px;
+
+    height: 46px;
+
+    border-radius: unset;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+
+    background-color: #f16d7f;
+
+    line-height: 46px;
+    color: #ffffff;
+  }
 }

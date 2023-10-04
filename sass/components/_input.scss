@@ -8,8 +8,24 @@
 
   &::placeholder {
     font-weight: 300;
-    font-size: 14px;
     line-height: 32px;
     color: #a4a4a4;
+  }
+
+  &.subscribe {
+    padding: 0 30px;
+
+    height: 46px;
+
+    border: none;
+    border-radius: 23px 0 0 23px;
+
+    background-color: #e1e1e1;
+
+    &::placeholder {
+      line-height: 46px;
+      font-weight: 400;
+      color: #222224;
+    }
   }
 }

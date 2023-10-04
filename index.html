@@ -147,56 +147,57 @@
 
 					<ul class="collection-offers__list">
 						<!-- Collection card -->
-						<div class="collection-item">
+						<li class="collection-item">
 							<img src="./assets/images/cards/card-01.png" alt="Collection card 01" class="collection-item__image">
 	
 							<div class="collection-item__desc">
 								<p class="collection-item__desc-title">Blaze leggings</p>
 								<p class="collection-item__desc-price">$52.00</p>
 							</div>
-						</div>
+						</li>
 						<!-- //Collection card -->
 	
 						<!-- Collection card -->
-						<div class="collection-item">
+						<li class="collection-item">
 							<img src="./assets/images/cards/card-02.png" alt="Collection card 02" class="collection-item__image">
 	
 							<div class="collection-item__desc">
 								<p class="collection-item__desc-title">Alexa sweater</p>
 								<p class="collection-item__desc-price">$52.00</p>
 							</div>
-						</div>
+						</li>
 						<!-- //Collection card -->
 	
 						<!-- Collection card -->
-						<div class="collection-item">
+						<li class="collection-item">
 							<img src="./assets/images/cards/card-03.png" alt="Collection card 03" class="collection-item__image">
-	
 							<div class="collection-item__desc">
+								
 								<p class="collection-item__desc-title">Agnes top</p>
 								<p class="collection-item__desc-price">$52.00</p>
 							</div>
-						</div>
+						</li>
 						<!-- //Collection card -->
 	
 						<!-- Collection card -->
-						<div class="collection-item">
+						<li class="collection-item">
 							<img src="./assets/images/cards/card-04.png" alt="Collection card 04" class="collection-item__image">
 	
 							<div class="collection-item__desc">
 								<p class="collection-item__desc-title">Sylva sweater</p>
 								<p class="collection-item__desc-price">$52.00</p>
 							</div>
-						</div>
+						</li>
 						<!-- //Collection card -->
 					</ul>
 				</div>
 			</section>
 
 			<section class="collection-cta">
-				<div class="container">
+				<div class="container container--flex-jc">
 					<div class="cta-slider__wrapper">
 						<div class="cta-slider">
+							<!-- Cta item -->
 							<div class="cta-slider__item">
 								<img src="./assets/images/cta/user-img.jpg" alt="Comment image" class="cta-item__img">
 
@@ -209,18 +210,96 @@
 									<p class="cta-item__desc-country">Dhake, Bd</p>
 								</div>
 							</div>
+							<!-- //Cta item -->
 						</div>
 
 						<div class="cta-slider__nav">
-							<div class="cta-slider__nav-item"></div>
-							<div class="cta-slider__nav-item active"></div>
-							<div class="cta-slider__nav-item"></div>
+							<button type="button" class="cta-slider__nav-item"></button>
+							<button type="button" class="cta-slider__nav-item active"></button>
+							<button type="button" class="cta-slider__nav-item"></button>
 						</div>
+					</div>
+
+					<div class="cta-subscribe">
+						<h3 class="cta-subscribe__title">Subscribe</h3>
+						<h3 class="cta-subscribe__sub-title">For our newletter and promotion</h3>
+
+						<form class="cta-subscribe-input">
+							<input type="email" name="subscribe_email" class="input subscribe" required placeholder="Enter Your Email">
+							<button type="submit" class="btn subscribe">Subscribe</button>
+						</form>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer">Footer</footer>
+		<footer class="footer">
+			<div class="container container--flex-jc">
+				<div class="footer-desc">
+					<div class="footer__logo logo">
+						<img src="./assets/images/logo.png" alt="Logo image">
+
+						<p>Bran<span>d</span></p>
+					</div>
+
+					<p class="text">
+						Objectively transition extensive data rather than cross functional solutions. Monotonectally
+						syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+						expanded array of processes and cross-unit partnerships.
+					</p>
+					<p class="text">
+						Efficiently plagiarize 24/365 action items and focused infomediaries.
+						Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+					</p>
+				</div>
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title title-4">COMPANY</h4>
+					<ul class="footer-nav-list">
+						<li><a href="#!">Home</a></li>
+						<li><a href="#!">Shop</a></li>
+						<li><a href="#!">About</a></li>
+						<li><a href="#!">How It Works</a></li>
+						<li><a href="#!">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title title-4">INFORMATION</h4>
+					<ul class="footer-nav-list">
+						<li><a href="#!">Tearms & Condition</a></li>
+						<li><a href="#!">Privacy Policy</a></li>
+						<li><a href="#!">How to Buy</a></li>
+						<li><a href="#!">How to Sell</a></li>
+						<li><a href="#!">Promotion</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title title-4">SHOP CATEGORY</h4>
+					<ul class="footer-nav-list">
+						<li><a href="#!">Men</a></li>
+						<li><a href="#!">Women</a></li>
+						<li><a href="#!">Child</a></li>
+						<li><a href="#!">Apparel</a></li>
+						<li><a href="#!">Brows All</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container container--flex-jc">
+					<span class="footer-copyrights__text">© 2017  Brand  All Rights Reserved.</span>
+	
+					<ul class="footer-bottom-socials">
+						<li class="footer-bottom-socials__item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
