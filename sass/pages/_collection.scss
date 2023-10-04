@@ -221,3 +221,35 @@
     }
   }
 }
+
+/* Collection Call to Action */
+
+.collection-cta {
+  background-image: ulr("./assets/images/cta/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta-slider__wrapper {
+  display: flex;
+}
+.cta-slider {
+}
+.cta-slider__item {
+}
+.cta-item__img {
+}
+.cta-item__desc {
+}
+.cta-item__desc-text {
+}
+.cta-item__desc-name {
+}
+.cta-item__desc-country {
+}
+.cta-slider__nav {
+}
+.cta-slider__nav-item {
+
+  &.active {
+  }
+}

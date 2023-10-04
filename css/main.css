@@ -3660,4 +3660,15 @@ section {
   color: #f16d7f;
 }
 
+/* Collection Call to Action */
+.collection-cta {
+  background-image: ulr("./assets/images/cta/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta-slider__wrapper {
+  display: flex;
+}
+
 /*# sourceMappingURL=main.css.map */
