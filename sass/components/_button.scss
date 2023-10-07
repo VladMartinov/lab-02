@@ -38,6 +38,14 @@
   &-dropdown {
     padding-left: 16px;
   }
+  &-browse {
+    padding: 0 20px 0 25px;
+    height: 48px;
+
+    & span {
+      line-height: 48px;
+    }
+  }
 
   &.search {
     border-right: none;

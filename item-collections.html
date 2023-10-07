@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>BRAND - Коллекция</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Стартовый сайт" />
+		<meta property="og:description" content="Новый стартовый сайт для лабораторной работы" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-top">
+				<div class="container container--flex">
+					<div class="header__logo logo">
+						<img src="./assets/images/logo.png" alt="Logo image">
+
+						<p>Bran<span>d</span></p>
+					</div>
+
+					<div class="header-search">
+						<button class="btn btn-def btn-dropdown search"><span>Browse</span><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+
+						<input type="text" class="input header-search__input" placeholder="Search for item...">
+
+						<button class="btn btn-icon btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+					</div>
+
+					<button class="header-cart btn btn-icon"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></button>
+					<button class="btn btn-primary btn-dropdown"><span>My Account</span><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="container">
+					<nav class="header-nav">
+						<a href="./index.html">Home</a>
+						<a href="#!">Man</a>
+						<a href="#!">Women</a>
+						<a href="#!">Kids</a>
+						<a href="#!">Accoseriese</a>
+						<a href="#!">Featured</a>
+						<a href="#!">Hot deals</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="filter-section">
+			<div class="container container--flex">
+				<h2 class="filter-section__title title-2">New arrivals</h2>
+
+				<div class="filter-select">
+					<span class="filter-select__item">Home</span>
+					<span class="filter-select__item">Men</span>
+					<span class="filter-select__item active">New arrivals</span>
+				</div>
+			</div>
+	</section>
+
+		<main class="collection">
+			<section class="collection-slider">
+
+				<div class="slider">
+					<div class="slider-items">
+						<div class="slider__item">
+							<img src="./assets/images/item-collections/slider/main-card-01.png" alt="Card collection 01">
+						</div>
+					</div>
+
+					<div class="slider__arrow-left"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></div>
+					<div class="slider__arrow-right"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></div>
+				</div>
+			</section>
+
+			<section class="collection-card">
+				<div class="container">
+					<div class="collection-card__wrapper">
+						<span class="collection-card__type">women collection</span>
+						<h4 class="collection-card__title title-4">Moschino cheap and chic</h4>
+
+						<div class="collection-card__desc">
+							<p class="collection-card__desc-text">
+								Compellingly actualize fully researched processes before proactive outsourcing.
+								Progressively syndicate collaborative architectures before cutting-edge services.
+								Completely visualize parallel core competencies rather than exceptional portals.
+							</p>
+							<div class="collection-card-params">
+								<p>Material: <span>cotton</span></p>
+								<p>designer: <span>binburhan</span></p>
+							</div>
+							<span class="collection-card__price">$561</span>
+						</div>
+
+						<form class="collection-settings">
+							<div class="collection-settings__wrapper">
+								<fieldset class="collection-settings__input">
+								 <legend class="collection-settings__input-title">Choose color</legend>
+								 <div class="select">
+									 <button class="select__btn" type="button">
+										 <div class="select__btn-color pink"></div>
+										 <span class="select__btn-text">Red</span>
+										 <i class="fa fa-angle-down" aria-hidden="true"></i>
+									 </button>
+								 </div>
+							 </fieldset>
+
+							 <fieldset class="collection-settings__input">
+								 <legend class="collection-settings__input-title">Choose size</legend>
+								 <div class="select">
+									 <button class="select__btn" type="button">
+										 <span class="select__btn-text">XXL</span>
+										 <i class="fa fa-angle-down" aria-hidden="true"></i>
+									 </button>
+								 </div>
+							 </fieldset>
+
+							 <fieldset class="collection-settings__input">
+								 <legend class="collection-settings__input-title">Quantity</legend>
+								 <input type="number" class="input" placeholder="2">
+							 </fieldset>
+							</div>
+
+							<button type="submit" class="collection-settings__submit">
+								<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+								<span class="collection-settings__submit-text">Add to cart</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="collection-offers">
+				<div class="container">
+					<h2 class="collection-offers__title title-2 black">You may like also</h2>
+
+					<ul class="collection-offers__list">
+						<!-- Collection card -->
+						<li class="collection-item">
+							<img src="./assets/images/item-collections/rec/card-01.png" alt="Collection card 01" class="collection-item__image">
+	
+							<div class="collection-item__desc">
+								<p class="collection-item__desc-title">Blaze leggings</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+	
+						<!-- Collection card -->
+						<li class="collection-item">
+							<img src="./assets/images/item-collections/rec/card-02.png" alt="Collection card 02" class="collection-item__image">
+	
+							<div class="collection-item__desc">
+								<p class="collection-item__desc-title">Alexa sweater</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+	
+						<!-- Collection card -->
+						<li class="collection-item">
+							<img src="./assets/images/item-collections/rec/card-03.png" alt="Collection card 03" class="collection-item__image">
+							<div class="collection-item__desc">
+								
+								<p class="collection-item__desc-title">Agnes top</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+	
+						<!-- Collection card -->
+						<li class="collection-item">
+							<img src="./assets/images/item-collections/rec/card-04.png" alt="Collection card 04" class="collection-item__image">
+	
+							<div class="collection-item__desc">
+								<p class="collection-item__desc-title">Sylva sweater</p>
+								<p class="collection-item__desc-price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+					</ul>
+				</div>
+			</section>
+
+		</main>
+
+		<section class="cta">
+			<div class="container container--flex-jc">
+				<div class="cta-slider__wrapper">
+					<div class="cta-slider">
+						<!-- Cta item -->
+						<div class="cta-slider__item">
+							<img src="./assets/images/cta/user-img.jpg" alt="Comment image" class="cta-item__img">
+
+							<div class="cta-item__desc">
+								<p class="cta-item__desc-text">
+									”Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. 
+									Aliquam condimentum mattis neque sed pretium”
+								</p>
+								<p class="cta-item__desc-name">Bin Burhan</p>
+								<p class="cta-item__desc-country">Dhake, Bd</p>
+							</div>
+						</div>
+						<!-- //Cta item -->
+					</div>
+
+					<div class="cta-slider__nav">
+						<button type="button" class="cta-slider__nav-item"></button>
+						<button type="button" class="cta-slider__nav-item active"></button>
+						<button type="button" class="cta-slider__nav-item"></button>
+					</div>
+				</div>
+
+				<div class="cta-subscribe">
+					<h3 class="cta-subscribe__title">Subscribe</h3>
+					<h3 class="cta-subscribe__sub-title">For our newletter and promotion</h3>
+
+					<form class="cta-subscribe-input">
+						<input type="email" name="subscribe_email" class="input subscribe" required placeholder="Enter Your Email">
+						<button type="submit" class="btn subscribe">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="footer">
+			<div class="container container--flex-jc">
+				<div class="footer-desc">
+					<div class="footer__logo logo">
+						<img src="./assets/images/logo.png" alt="Logo image">
+
+						<p>Bran<span>d</span></p>
+					</div>
+
+					<p class="text">
+						Objectively transition extensive data rather than cross functional solutions. Monotonectally
+						syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+						expanded array of processes and cross-unit partnerships.
+					</p>
+					<p class="text">
+						Efficiently plagiarize 24/365 action items and focused infomediaries.
+						Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+					</p>
+				</div>
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title title-4">COMPANY</h4>
+					<ul class="footer-nav-list">
+						<li><a href="#!">Home</a></li>
+						<li><a href="#!">Shop</a></li>
+						<li><a href="#!">About</a></li>
+						<li><a href="#!">How It Works</a></li>
+						<li><a href="#!">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title title-4">INFORMATION</h4>
+					<ul class="footer-nav-list">
+						<li><a href="#!">Tearms & Condition</a></li>
+						<li><a href="#!">Privacy Policy</a></li>
+						<li><a href="#!">How to Buy</a></li>
+						<li><a href="#!">How to Sell</a></li>
+						<li><a href="#!">Promotion</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-nav">
+					<h4 class="footer-nav__title title-4">SHOP CATEGORY</h4>
+					<ul class="footer-nav-list">
+						<li><a href="#!">Men</a></li>
+						<li><a href="#!">Women</a></li>
+						<li><a href="#!">Child</a></li>
+						<li><a href="#!">Apparel</a></li>
+						<li><a href="#!">Brows All</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container container--flex-jc">
+					<span class="footer-copyrights__text">© 2017  Brand  All Rights Reserved.</span>
+	
+					<ul class="footer-bottom-socials">
+						<li class="footer-bottom-socials__item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+						<li class="footer-bottom-socials__item"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

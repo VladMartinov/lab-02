@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title and SEO -->
-		<title>BRAND - Коллекция</title>
+		<title>BRAND - Главная</title>
 		<meta name="description" content="Описание страницы" />
 		<meta name="keywords" content="ключевые слова, фразы" />
 
@@ -46,7 +46,7 @@
 			<div class="header-bottom">
 				<div class="container">
 					<nav class="header-nav">
-						<a href="#!">Home</a>
+						<a href="./index.html">Home</a>
 						<a href="#!">Man</a>
 						<a href="#!">Women</a>
 						<a href="#!">Kids</a>
@@ -58,180 +58,244 @@
 			</div>
 		</header>
 
-		<main class="collection">
-			<section class="collection-slider">
-				<div class="collection-slider-top">
-					<div class="container container--flex">
-						<h2 class="collection-slider__title title-2">New arrivals</h2>
-	
-						<div class="collection-select">
-							<span class="collection-select__item">Home</span>
-							<span class="collection-select__item">Men</span>
-							<span class="collection-select__item active">New arrivals</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="slider">
-					<div class="slider-items">
-						<div class="slider__item">
-							<img src="./assets/images/cards/main-card-01.png" alt="Card collection 01">
-						</div>
-					</div>
-
-					<div class="slider__arrow-left"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></div>
-					<div class="slider__arrow-right"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></div>
-				</div>
-			</section>
-
-			<section class="collection-card">
-				<div class="container">
-					<div class="collection-card__wrapper">
-						<span class="collection-card__type">women collection</span>
-						<h4 class="collection-card__title title-4">Moschino cheap and chic</h4>
-
-						<div class="collection-card__desc">
-							<p class="collection-card__desc-text">
-								Compellingly actualize fully researched processes before proactive outsourcing.
-								Progressively syndicate collaborative architectures before cutting-edge services.
-								Completely visualize parallel core competencies rather than exceptional portals.
-							</p>
-							<div class="collection-card-params">
-								<p>Material: <span>cotton</span></p>
-								<p>designer: <span>binburhan</span></p>
-							</div>
-							<span class="collection-card__price">$561</span>
-						</div>
-
-						<form class="collection-settings">
-							<div class="collection-settings__wrapper">
-								<fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Choose color</legend>
-								 <div class="select">
-									 <button class="select__btn" type="button">
-										 <div class="select__btn-color pink"></div>
-										 <span class="select__btn-text">Red</span>
-										 <i class="fa fa-angle-down" aria-hidden="true"></i>
-									 </button>
-								 </div>
-							 </fieldset>
-
-							 <fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Choose size</legend>
-								 <div class="select">
-									 <button class="select__btn" type="button">
-										 <span class="select__btn-text">XXL</span>
-										 <i class="fa fa-angle-down" aria-hidden="true"></i>
-									 </button>
-								 </div>
-							 </fieldset>
-
-							 <fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Quantity</legend>
-								 <input type="number" class="input" placeholder="2">
-							 </fieldset>
-							</div>
-
-							<button type="submit" class="collection-settings__submit">
-								<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-								<span class="collection-settings__submit-text">Add to cart</span>
-							</button>
-						</form>
+		<main class="main">
+			<section class="main-banner">
+				<div class="container container--relative container--full-height">
+					<div class="main-banner__wrapper">
+						<h1 class="main-banner__title">The brand</h1>
+						<h2 class="main-banner__subtitle">Of luxerious <span>fashion</span></h2>
 					</div>
 				</div>
 			</section>
 
-			<section class="collection-offers">
+			<section class="main-categories">
 				<div class="container">
-					<h2 class="collection-offers__title title-2 black">You may like also</h2>
+					<div class="categories-grid">
+						<!-- Categories item -->
+						<div class="categories-grid__item card-1">
+							<img src="./assets/images/main/categories/man-card.jpg" alt="Categories image">
 
-					<ul class="collection-offers__list">
+							<div class="categories-grid__item-text">
+								<h4 class="categories-grid__item-subtitle title-4 black">Hot deal</h4>
+								<h3 class="categories-grid__item-title">For men</h3>
+							</div>
+						</div>
+						<!-- //Categories item -->
+
+						<!-- Categories item -->
+						<div class="categories-grid__item card-2">
+							<img src="./assets/images/main/categories/women-card.jpg" alt="Categories image">
+
+							<div class="categories-grid__item-text">
+								<h4 class="categories-grid__item-subtitle title-4 black">30% offer</h4>
+								<h3 class="categories-grid__item-title">Women</h3>
+							</div>
+						</div>
+						<!-- //Categories item -->
+
+						<!-- Categories item -->
+						<div class="categories-grid__item card-3">
+							<img src="./assets/images/main/categories/accesories-card.jpg" alt="Categories image">
+
+							<div class="categories-grid__item-text">
+								<h4 class="categories-grid__item-subtitle title-4 black">Luxirous & Trendy</h4>
+								<h3 class="categories-grid__item-title">Accesories</h3>
+							</div>
+						</div>
+						<!-- //Categories item -->
+
+						<!-- Categories item -->
+						<div class="categories-grid__item card-4">
+							<img src="./assets/images/main/categories/kids-card.jpg" alt="Categories image">
+
+							<div class="categories-grid__item-text">
+								<h4 class="categories-grid__item-subtitle title-4 black">New arrivals</h4>
+								<h3 class="categories-grid__item-title">For kids</h3>
+							</div>
+						</div>
+						<!-- //Categories item -->
+					</div>
+				</div>
+			</section>
+
+			<section class="main-fetured">
+				<div class="container">
+					<h2 class="fetured__title">Featured Items</h2>
+					<span class="fetured__desc">Shop for items based on what we featured in this week</span>
+
+					<ul class="fetured-list">
 						<!-- Collection card -->
-						<li class="collection-item">
-							<img src="./assets/images/cards/card-01.png" alt="Collection card 01" class="collection-item__image">
-	
-							<div class="collection-item__desc">
-								<p class="collection-item__desc-title">Blaze leggings</p>
-								<p class="collection-item__desc-price">$52.00</p>
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-01.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
 							</div>
 						</li>
 						<!-- //Collection card -->
-	
+
 						<!-- Collection card -->
-						<li class="collection-item">
-							<img src="./assets/images/cards/card-02.png" alt="Collection card 02" class="collection-item__image">
-	
-							<div class="collection-item__desc">
-								<p class="collection-item__desc-title">Alexa sweater</p>
-								<p class="collection-item__desc-price">$52.00</p>
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-02.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
 							</div>
 						</li>
 						<!-- //Collection card -->
-	
+
 						<!-- Collection card -->
-						<li class="collection-item">
-							<img src="./assets/images/cards/card-03.png" alt="Collection card 03" class="collection-item__image">
-							<div class="collection-item__desc">
-								
-								<p class="collection-item__desc-title">Agnes top</p>
-								<p class="collection-item__desc-price">$52.00</p>
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-03.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
 							</div>
 						</li>
 						<!-- //Collection card -->
-	
+
 						<!-- Collection card -->
-						<li class="collection-item">
-							<img src="./assets/images/cards/card-04.png" alt="Collection card 04" class="collection-item__image">
-	
-							<div class="collection-item__desc">
-								<p class="collection-item__desc-title">Sylva sweater</p>
-								<p class="collection-item__desc-price">$52.00</p>
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-04.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+
+						<!-- Collection card -->
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-05.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+
+						<!-- Collection card -->
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-06.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+
+						<!-- Collection card -->
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-07.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
+							</div>
+						</li>
+						<!-- //Collection card -->
+
+						<!-- Collection card -->
+						<li class="fetured-item">
+							<div class="fetured-image__wrapper">
+								<img src="./assets/images/main/fetured/feature-card-08.jpg" alt="Collection card 01">
+								<div class="featured-image-button__wrapper">
+									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
+								</div>
+							</div>
+
+							<div class="fetured-item__desc">
+								<p class="fetured-item__title">Mango people T-Shirt</p>
+								<p class="fetured-item__price">$52.00</p>
 							</div>
 						</li>
 						<!-- //Collection card -->
 					</ul>
-				</div>
-			</section>
 
-			<section class="collection-cta">
-				<div class="container container--flex-jc">
-					<div class="cta-slider__wrapper">
-						<div class="cta-slider">
-							<!-- Cta item -->
-							<div class="cta-slider__item">
-								<img src="./assets/images/cta/user-img.jpg" alt="Comment image" class="cta-item__img">
-
-								<div class="cta-item__desc">
-									<p class="cta-item__desc-text">
-										”Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. 
-										Aliquam condimentum mattis neque sed pretium”
-									</p>
-									<p class="cta-item__desc-name">Bin Burhan</p>
-									<p class="cta-item__desc-country">Dhake, Bd</p>
-								</div>
-							</div>
-							<!-- //Cta item -->
-						</div>
-
-						<div class="cta-slider__nav">
-							<button type="button" class="cta-slider__nav-item"></button>
-							<button type="button" class="cta-slider__nav-item active"></button>
-							<button type="button" class="cta-slider__nav-item"></button>
-						</div>
-					</div>
-
-					<div class="cta-subscribe">
-						<h3 class="cta-subscribe__title">Subscribe</h3>
-						<h3 class="cta-subscribe__sub-title">For our newletter and promotion</h3>
-
-						<form class="cta-subscribe-input">
-							<input type="email" name="subscribe_email" class="input subscribe" required placeholder="Enter Your Email">
-							<button type="submit" class="btn subscribe">Subscribe</button>
-						</form>
-					</div>
+					<button class="btn btn-primary btn-browse"><span>Browse All Product</span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
 				</div>
 			</section>
 		</main>
+
+		<section class="cta">
+			<div class="container container--flex-jc">
+				<div class="cta-slider__wrapper">
+					<div class="cta-slider">
+						<!-- Cta item -->
+						<div class="cta-slider__item">
+							<img src="./assets/images/cta/user-img.jpg" alt="Comment image" class="cta-item__img">
+
+							<div class="cta-item__desc">
+								<p class="cta-item__desc-text">
+									”Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. 
+									Aliquam condimentum mattis neque sed pretium”
+								</p>
+								<p class="cta-item__desc-name">Bin Burhan</p>
+								<p class="cta-item__desc-country">Dhake, Bd</p>
+							</div>
+						</div>
+						<!-- //Cta item -->
+					</div>
+
+					<div class="cta-slider__nav">
+						<button type="button" class="cta-slider__nav-item"></button>
+						<button type="button" class="cta-slider__nav-item active"></button>
+						<button type="button" class="cta-slider__nav-item"></button>
+					</div>
+				</div>
+
+				<div class="cta-subscribe">
+					<h3 class="cta-subscribe__title">Subscribe</h3>
+					<h3 class="cta-subscribe__sub-title">For our newletter and promotion</h3>
+
+					<form class="cta-subscribe-input">
+						<input type="email" name="subscribe_email" class="input subscribe" required placeholder="Enter Your Email">
+						<button type="submit" class="btn subscribe">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</section>
 
 		<footer class="footer">
 			<div class="container container--flex-jc">

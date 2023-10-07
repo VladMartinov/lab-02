@@ -13,8 +13,12 @@
 @import "./components/logo";
 @import "./components/slider";
 
-@import "./components/header";
-@import "./components/footer";
+// Sections
+@import "./sections/header";
+@import "./sections/filter";
+@import "./sections/cta";
+@import "./sections/footer";
 
 // Pages
+@import "./pages/main-page";
 @import "./pages/collection";
