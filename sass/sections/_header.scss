@@ -7,7 +7,7 @@
   }
 
   &-bottom {
-    padding: 20px 0;
+    line-height: 50px;
   }
 }
 
@@ -41,6 +41,23 @@
 
     &:not(:last-child) {
       margin-right: 45px;
+    }
+
+    &.active {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+
+        width: 75px;
+        height: 3px;
+
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background-color: #ef5b70;
+      }
     }
   }
 }

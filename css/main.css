@@ -3581,7 +3581,7 @@ section {
   border-bottom: 1px solid #ececec;
 }
 .header-bottom {
-  padding: 20px 0;
+  line-height: 50px;
 }
 
 .header__logo {
@@ -3614,6 +3614,19 @@ section {
 }
 .header-nav a:not(:last-child) {
   margin-right: 45px;
+}
+.header-nav a.active {
+  position: relative;
+}
+.header-nav a.active::after {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ef5b70;
 }
 
 .filter-section {
@@ -3796,11 +3809,12 @@ section {
 }
 
 .advantages-right {
-  padding: 85px 0 100px;
+  padding: 48px 25px;
   background-color: #222224;
 }
 .advantages-right:first-child {
   width: 100%;
+  padding: 85px 0 100px;
 }
 .advantages-right:first-child .advantages-list {
   display: flex;
