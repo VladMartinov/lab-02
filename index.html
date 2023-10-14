@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title and SEO -->
-		<title>BRAND - Главная</title>
+		<title>BRAND - Checkout</title>
 		<meta name="description" content="Описание страницы" />
 		<meta name="keywords" content="ключевые слова, фразы" />
 
@@ -48,7 +48,7 @@
 					<nav class="header-nav">
 						<a href="./index.html">Home</a>
 						<a href="./products-man.html">Man</a>
-						<a href="./item-collections.html">Women</a>
+						<a href="./item-collections.html" class="active">Women</a>
 						<a href="#!">Kids</a>
 						<a href="#!">Accoseriese</a>
 						<a href="#!">Featured</a>
@@ -58,282 +58,137 @@
 			</div>
 		</header>
 
-		<main class="main">
-			<section class="main-banner">
-				<div class="container container--relative container--full-height">
-					<div class="main-banner__wrapper">
-						<h1 class="main-banner__title">The brand</h1>
-						<h2 class="main-banner__subtitle">Of luxerious <span>fashion</span></h2>
+		<section class="filter-section">
+			<div class="container container--flex">
+				<h2 class="filter-section__title title-2">New arrivals</h2>
+
+				<div class="filter-select">
+					<span class="filter-select__item">Home</span>
+					<span class="filter-select__item">Men</span>
+					<span class="filter-select__item active">New arrivals</span>
+				</div>
+			</div>
+		</section>
+
+		<main class="checkout">
+			<div class="container">
+				<!-- Checkout step -->
+				<div class="checkout-step active">
+					<h3 class="checkout-step__title">01. Shipping adress</h3>
+
+					<div class="checkout-forms">
+						<form class="checkout-form" action="">
+							<fieldset class="checkout-fieldset checkout-fieldset--radio">
+								<legend>Check as a guest or register</legend>
+								<span>Register with us future convenience</span>
+
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-guest" checked>Checkout as guest</label>
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-register">Register</label>
+							</fieldset>
+
+							<fieldset class="checkout-fieldset checkout-fieldset--list">
+								<legend>Register and save time</legend>
+								<span>Register with us future convenience</span>
+
+								<ul>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Fast and easy checkout</li>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Easy access to your order history and status</li>
+								</ul>
+							</fieldset>
+
+							<input type="submit" value="Continue">
+						</form>
+
+						<form class="checkout-form" action="">
+							<fieldset class="checkout-fieldset checkout-fieldset--input">
+								<legend>Already registed?</legend>
+								<span>Please log in below</span>
+
+								<label>
+									<span>Email adress</span>
+									<input type="email" name="user-type" required>
+								</label>
+								<label>
+									<span>Password</span>
+									<input type="password" name="user-type" required>
+								</label>
+
+								<span class="checkout-fieldset__desc">* Required Fields</span>
+							</fieldset>
+
+							<input type="submit" value="Log In">
+							<a href="#!" class="forgot-password">Forgot Password?</a>
+						</form>
 					</div>
 				</div>
-			</section>
+				<!-- //Checkout step -->
 
-			<section class="main-categories">
-				<div class="container">
-					<div class="categories-grid">
-						<!-- Categories item -->
-						<div class="categories-grid__item card-1">
-							<img src="./assets/images/main/categories/man-card.jpg" alt="Categories image">
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">02. Billing information</h3>
 
-							<div class="categories-grid__item-text">
-								<h4 class="categories-grid__item-subtitle title-4 black">Hot deal</h4>
-								<h3 class="categories-grid__item-title">For men</h3>
-							</div>
-						</div>
-						<!-- //Categories item -->
+					<div class="checkout-forms">
+						<form class="checkout-form" action="">
+							<fieldset class="checkout-fieldset checkout-fieldset--radio">
+								<legend>Check as a guest or register</legend>
+								<span>Register with us future convenience</span>
 
-						<!-- Categories item -->
-						<div class="categories-grid__item card-2">
-							<img src="./assets/images/main/categories/women-card.jpg" alt="Categories image">
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-guest" checked>Checkout as guest</label>
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-register">Register</label>
+							</fieldset>
 
-							<div class="categories-grid__item-text">
-								<h4 class="categories-grid__item-subtitle title-4 black">30% offer</h4>
-								<h3 class="categories-grid__item-title">Women</h3>
-							</div>
-						</div>
-						<!-- //Categories item -->
+							<fieldset class="checkout-fieldset checkout-fieldset--list">
+								<legend>Register and save time</legend>
+								<span>Register with us future convenience</span>
 
-						<!-- Categories item -->
-						<div class="categories-grid__item card-3">
-							<img src="./assets/images/main/categories/accesories-card.jpg" alt="Categories image">
+								<ul>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Fast and easy checkout</li>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Easy access to your order history and status</li>
+								</ul>
+							</fieldset>
 
-							<div class="categories-grid__item-text">
-								<h4 class="categories-grid__item-subtitle title-4 black">Luxirous & Trendy</h4>
-								<h3 class="categories-grid__item-title">Accesories</h3>
-							</div>
-						</div>
-						<!-- //Categories item -->
-
-						<!-- Categories item -->
-						<div class="categories-grid__item card-4">
-							<img src="./assets/images/main/categories/kids-card.jpg" alt="Categories image">
-
-							<div class="categories-grid__item-text">
-								<h4 class="categories-grid__item-subtitle title-4 black">New arrivals</h4>
-								<h3 class="categories-grid__item-title">For kids</h3>
-							</div>
-						</div>
-						<!-- //Categories item -->
+							<input type="submit" value="Continue">
+						</form>
 					</div>
 				</div>
-			</section>
+				<!-- //Checkout step -->
 
-			<section class="main-fetured">
-				<div class="container">
-					<h2 class="fetured__title">Featured Items</h2>
-					<span class="fetured__desc">Shop for items based on what we featured in this week</span>
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">03. Shipping information</h3>
 
-					<ul class="fetured-list">
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-01.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-02.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-03.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-04.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-05.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-06.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-07.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/main/fetured/feature-card-08.jpg" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Mango people T-Shirt</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-					</ul>
-
-					<button class="btn btn-primary btn-browse"><span>Browse All Product</span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-				</div>
-			</section>
-
-			<section class="advantages">
-				<div class="container container--flex">
-					<div class="advantages-left">
-						<div class="advantages-left__wrapper">
-							<p class="advantages-left__text-big">30% <span>Offer</span></p>
-							<p class="advantages-left__text">For women</p>
-						</div>
-					</div>
-
-					<div class="advantages-right">
-						<ul class="advantages-list">
-							<!-- Advatages item -->
-							<li class="advantages-item">
-								<svg class="advantages-item__icon" xmlns="http://www.w3.org/2000/svg" width="45" height="32" viewBox="0 0 45 32">
-									<defs>
-										<style>
-											.cls-1 {
-												fill: #f16d7f;
-												fill-rule: evenodd;
-											}
-										</style>
-									</defs>
-									<path id="truck.svg" class="cls-1" d="M1043.11,2953.42a0.937,0.937,0,0,0-.93.94,0.89,0.89,0,1,1-.89-0.91,0.94,0.94,0,0,0,0-1.88,2.785,2.785,0,1,0,2.75,2.79A0.937,0.937,0,0,0,1043.11,2953.42Zm26.47,0a0.937,0.937,0,0,0-.93.94,0.89,0.89,0,1,1-.89-0.91,0.94,0.94,0,0,0,0-1.88,2.785,2.785,0,1,0,2.75,2.79A0.937,0.937,0,0,0,1069.58,2953.42Zm7.29-12.02-3.56-6.11c-1.22-2.06-2.37-3.27-4.68-3.47a0.875,0.875,0,0,0-.24-0.03h-7.12v-1.91a1.865,1.865,0,0,0-1.85-1.88h-25.56a1.867,1.867,0,0,0-1.86,1.88v23.54a1.874,1.874,0,0,0,1.86,1.88h1.93a5.562,5.562,0,0,0,10.99,0h15.49a5.562,5.562,0,0,0,10.99,0h2.81a0.937,0.937,0,0,0,.93-0.94v-12.49A0.878,0.878,0,0,0,1076.87,2941.4Zm-3.54,3.6a0.937,0.937,0,0,1,.93-0.94h0.88v1.85h-1.81V2945Zm1.26-3.82h-8.53a0.648,0.648,0,0,0-.19-0.02,0.952,0.952,0,0,1-.95-0.96v-3.77h6.9Zm-40.73-11.3h25.56v23.54h-12.64a5.56,5.56,0,0,0-10.99,0h-1.93v-23.54Zm7.43,28.24a3.765,3.765,0,1,1,3.72-3.76A3.747,3.747,0,0,1,1041.29,2958.12Zm26.47,0a3.765,3.765,0,1,1,3.72-3.76A3.747,3.747,0,0,1,1067.76,2958.12Zm5.5-4.7a5.56,5.56,0,0,0-10.99,0h-1v-19.75h6.63a3.366,3.366,0,0,1,2.58.88h-6.49a0.937,0.937,0,0,0-.93.94v4.71a2.84,2.84,0,0,0,2.58,2.83,0.852,0.852,0,0,0,.23.03h6.38a2.8,2.8,0,0,0-.77,1.94v1.85a0.93,0.93,0,0,0,.93.94h2.73v5.63h-1.88Zm-36.58-19.75h19.91a0.94,0.94,0,0,0,0-1.88h-19.91A0.94,0.94,0,0,0,1036.68,2933.67Z" transform="translate(-1032 -2928)"/>
-								</svg>
-
-								<div class="advantages-item-text">
-									<h4 class="advantages-item-text__title">Free Delivery</h4>
-									<p class="advantages-item-text__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-								</div>
-							</li>
-							<!-- //Advatages item -->
-
-							<!-- Advatages item -->
-							<li class="advantages-item">
-								<svg class="advantages-item__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-									<defs>
-										<style>
-											.cls-1 {
-												fill: #f16d7f;
-												fill-rule: evenodd;
-											}
-										</style>
-									</defs>
-									<path id="disc.svg" class="cls-1" d="M1056.78,3102.5c-1.89,0-3.46,1.63-3.46,4.56,0.02,2.91,1.57,4.37,3.35,4.37,1.83,0,3.42-1.52,3.42-4.59C1060.09,3104.07,1058.79,3102.5,1056.78,3102.5Zm-0.06,7.74c-1.19,0-1.9-1.41-1.88-3.26,0-1.84.67-3.29,1.88-3.29,1.34,0,1.85,1.47,1.85,3.24C1058.57,3108.85,1057.99,3110.24,1056.72,3110.24Zm-5.95-9.42c0-2.77-1.32-4.34-3.33-4.34-1.89,0-3.46,1.64-3.46,4.54,0.03,2.93,1.57,4.39,3.35,4.39C1049.18,3105.41,1050.77,3103.89,1050.77,3100.82Zm-5.24.14c0-1.84.64-3.29,1.85-3.29,1.34,0,1.85,1.47,1.85,3.24,0,1.93-.58,3.31-1.85,3.31C1046.17,3104.22,1045.48,3102.81,1045.53,3100.96Zm10.08-4.32-8.41,14.75h1.23l8.42-14.75h-1.24Zm12.97,10.33L1072,3104l-3.42-2.97,2.21-3.98-4.2-1.6,0.73-4.5-4.5-.05-0.82-4.49-4.24,1.52-2.29-3.93-3.47,2.9-3.47-2.9-2.29,3.93-4.24-1.52-0.82,4.49-4.5.05,0.74,4.5-4.22,1.6,2.22,3.98L1032,3104l3.42,2.97-2.22,3.98,4.21,1.6-0.73,4.5,4.5,0.05,0.82,4.49,4.24-1.52,2.29,3.93,3.47-2.9,3.47,2.9,2.29-3.93,4.24,1.52,0.82-4.49,4.5-.05-0.74-4.5,4.21-1.6Zm-2.66,3.78-1.46.55,0.25,1.57,0.37,2.28-2.28.02-1.56.02-0.28,1.56-0.42,2.28-2.15-.77-1.47-.53-0.79,1.36-1.16,2-1.76-1.48-1.21-1.01-1.21,1.01-1.76,1.48-1.16-2-0.79-1.36-1.47.53-2.15.76-0.42-2.27-0.29-1.56-1.56-.02-2.28-.02,0.37-2.29,0.26-1.56-1.46-.56-2.14-.81,1.13-2.01,0.76-1.38-1.18-1.03-1.73-1.51,1.73-1.51,1.18-1.03-0.76-1.38-1.12-2.02,2.13-.81,1.46-.56-0.25-1.56-0.38-2.28,2.29-.03,1.56-.01,0.28-1.56,0.42-2.28,2.15,0.77,1.47,0.52,0.79-1.36,1.16-1.99,1.76,1.47,1.21,1.01,1.2-1.01,1.77-1.47,1.16,2,0.79,1.36,1.47-.53,2.15-.77,0.42,2.28,0.28,1.56,1.56,0.01,2.29,0.03-0.37,2.28-0.26,1.57,1.46,0.55,2.13,0.81-1.12,2.02-0.76,1.38,1.18,1.03,1.73,1.51-1.73,1.51-1.18,1.03,0.76,1.38,1.12,2.01Z" transform="translate(-1032 -3084)"/>
-								</svg>
-
-								<div class="advantages-item-text">
-									<h4 class="advantages-item-text__title">Sales & discounts</h4>
-									<p class="advantages-item-text__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-								</div>
-							</li>
-							<!-- //Advatages item -->
-
-							<!-- Advatages item -->
-							<li class="advantages-item">
-								<svg class="advantages-item__icon" xmlns="http://www.w3.org/2000/svg" width="47.06" height="35" viewBox="0 0 47.06 35">
-									<defs>
-										<style>
-											.cls-1 {
-												fill: #f16d7f;
-												fill-rule: evenodd;
-											}
-										</style>
-									</defs>
-									<path id="crpwn.svg" class="cls-1" d="M1070.37,3246.55a4.6,4.6,0,0,0-4.64,4.54,4.438,4.438,0,0,0,1.56,3.37l-5.87,2.06-8.34-9.7a4.544,4.544,0,0,0,3.1-4.26,4.646,4.646,0,1,0-6.25,4.25l-8.35,9.71-5.86-2.06a4.472,4.472,0,0,0,1.56-3.37,4.652,4.652,0,1,0-5.75,4.4v12.32a1.027,1.027,0,0,0,.05.24,1.6,1.6,0,0,0-.05.39c0,4.42,17.93,4.55,19.97,4.55s19.97-.13,19.97-4.55a1.6,1.6,0,0,0-.05-0.39,1.027,1.027,0,0,0,.05-0.24v-12.32A4.524,4.524,0,0,0,1070.37,3246.55Zm-21.22-3.99a2.386,2.386,0,1,1,2.39,2.33A2.367,2.367,0,0,1,1049.15,3242.56Zm-7.59,16.31a1.141,1.141,0,0,0,1.24-.34l8.7-10.11,8.7,10.11a1.152,1.152,0,0,0,1.25.34l7.76-2.73v9.95c-4.89-2.12-16.12-2.2-17.71-2.2s-12.82.08-17.71,2.2v-9.96Zm9.94,11.91c-8.7,0-14.25-1.01-16.56-1.87a4.748,4.748,0,0,1-1-.47c0.73-.52,3.07-1.24,6.97-1.74a93.757,93.757,0,0,1,21.18,0c3.91,0.5,6.25,1.22,6.97,1.74a4,4,0,0,1-.99.47C1065.76,3269.77,1060.21,3270.78,1051.5,3270.78Zm-21.25-19.69a2.385,2.385,0,1,1,2.39,2.34A2.365,2.365,0,0,1,1030.25,3251.09Zm40.12,2.34a2.336,2.336,0,1,1,2.39-2.34A2.365,2.365,0,0,1,1070.37,3253.43Z" transform="translate(-1027.97 -3238)"/>
-								</svg>
-
-								<div class="advantages-item-text">
-									<h4 class="advantages-item-text__title">Quality assurance</h4>
-									<p class="advantages-item-text__desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-								</div>
-							</li>
-							<!-- //Advatages item -->
-						</ul>
+					<div class="checkout-forms">
 					</div>
 				</div>
-			</section>
+				<!-- //Checkout step -->
+
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">04. Shipping method</h3>
+
+					<div class="checkout-forms">
+					</div>
+				</div>
+				<!-- //Checkout step -->
+
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">05. Payment method</h3>
+
+					<div class="checkout-forms">
+					</div>
+				</div>
+				<!-- //Checkout step -->
+
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">06. Order review</h3>
+
+					<div class="checkout-forms">
+					</div>
+				</div>
+				<!-- //Checkout step -->
+			</div>
 		</main>
 
 		<section class="cta">
