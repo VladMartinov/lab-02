@@ -8,17 +8,21 @@
 // Components
 @import "./components/button";
 @import "./components/input";
+@import "./components/input-range";
 @import "./components/select";
 
 @import "./components/logo";
 @import "./components/slider";
+@import "./components/product-card";
 
 // Sections
 @import "./sections/header";
 @import "./sections/filter";
 @import "./sections/cta";
+@import "./sections/advantages";
 @import "./sections/footer";
 
 // Pages
 @import "./pages/main-page";
+@import "./pages/products";
 @import "./pages/collection";
