@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title and SEO -->
-		<title>BRAND - Коллекция</title>
+		<title>BRAND - Checkout</title>
 		<meta name="description" content="Описание страницы" />
 		<meta name="keywords" content="ключевые слова, фразы" />
 
@@ -70,150 +70,125 @@
 			</div>
 		</section>
 
-		<main class="collection">
-			<section class="collection-slider">
+		<main class="checkout">
+			<div class="container">
+				<!-- Checkout step -->
+				<div class="checkout-step active">
+					<h3 class="checkout-step__title">01. Shipping adress</h3>
 
-				<div class="slider">
-					<div class="slider-items">
-						<div class="slider__item">
-							<img src="./assets/images/item-collections/slider/main-card-01.png" alt="Card collection 01">
-						</div>
-					</div>
+					<div class="checkout-forms">
+						<form class="checkout-form" action="">
+							<fieldset class="checkout-fieldset checkout-fieldset--radio">
+								<legend>Check as a guest or register</legend>
+								<span>Register with us future convenience</span>
 
-					<div class="slider__arrow-left"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></div>
-					<div class="slider__arrow-right"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></div>
-				</div>
-			</section>
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-guest" checked>Checkout as guest</label>
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-register">Register</label>
+							</fieldset>
 
-			<section class="collection-card">
-				<div class="container">
-					<div class="collection-card__wrapper">
-						<span class="collection-card__type">women collection</span>
-						<h4 class="collection-card__title title-4">Moschino cheap and chic</h4>
+							<fieldset class="checkout-fieldset checkout-fieldset--list">
+								<legend>Register and save time</legend>
+								<span>Register with us future convenience</span>
 
-						<div class="collection-card__desc">
-							<p class="collection-card__desc-text">
-								Compellingly actualize fully researched processes before proactive outsourcing.
-								Progressively syndicate collaborative architectures before cutting-edge services.
-								Completely visualize parallel core competencies rather than exceptional portals.
-							</p>
-							<div class="collection-card-params">
-								<p>Material: <span>cotton</span></p>
-								<p>designer: <span>binburhan</span></p>
-							</div>
-							<span class="collection-card__price">$561</span>
-						</div>
+								<ul>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Fast and easy checkout</li>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Easy access to your order history and status</li>
+								</ul>
+							</fieldset>
 
-						<form class="collection-settings">
-							<div class="collection-settings__wrapper">
-								<fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Choose color</legend>
-								 <div class="select">
-									 <button class="select__btn" type="button">
-										 <div class="select__btn-color pink"></div>
-										 <span class="select__btn-text">Red</span>
-										 <i class="fa fa-angle-down" aria-hidden="true"></i>
-									 </button>
-								 </div>
-							 </fieldset>
+							<input type="submit" value="Continue">
+						</form>
 
-							 <fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Choose size</legend>
-								 <div class="select">
-									 <button class="select__btn" type="button">
-										 <span class="select__btn-text">XXL</span>
-										 <i class="fa fa-angle-down" aria-hidden="true"></i>
-									 </button>
-								 </div>
-							 </fieldset>
+						<form class="checkout-form" action="">
+							<fieldset class="checkout-fieldset checkout-fieldset--input">
+								<legend>Already registed?</legend>
+								<span>Please log in below</span>
 
-							 <fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Quantity</legend>
-								 <input type="number" class="input" placeholder="2">
-							 </fieldset>
-							</div>
+								<label>
+									<span>Email adress</span>
+									<input type="email" name="user-type" required>
+								</label>
+								<label>
+									<span>Password</span>
+									<input type="password" name="user-type" required>
+								</label>
 
-							<button type="submit" class="collection-settings__submit">
-								<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-								<span class="collection-settings__submit-text">Add to cart</span>
-							</button>
+								<span class="checkout-fieldset__desc">* Required Fields</span>
+							</fieldset>
+
+							<input type="submit" value="Log In">
+							<a href="#!" class="forgot-password">Forgot Password?</a>
 						</form>
 					</div>
 				</div>
-			</section>
+				<!-- //Checkout step -->
 
-			<section class="collection-offers">
-				<div class="container">
-					<h2 class="collection-offers__title title-2 black">You may like also</h2>
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">02. Billing information</h3>
 
-					<ul class="collection-offers__list">
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-01.png" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
+					<div class="checkout-forms">
+						<form class="checkout-form" action="">
+							<fieldset class="checkout-fieldset checkout-fieldset--radio">
+								<legend>Check as a guest or register</legend>
+								<span>Register with us future convenience</span>
 
-							<div class="product-item__desc">
-								<p class="product-item__title">Blaze leggings</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-guest" checked>Checkout as guest</label>
+								<label><input type="radio" class="visually-hidden" name="user-type" value="user-register">Register</label>
+							</fieldset>
 
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-02.png" alt="Collection card 02">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
+							<fieldset class="checkout-fieldset checkout-fieldset--list">
+								<legend>Register and save time</legend>
+								<span>Register with us future convenience</span>
 
-							<div class="product-item__desc">
-								<p class="product-item__title">Alexa sweater</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
+								<ul>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Fast and easy checkout</li>
+									<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Easy access to your order history and status</li>
+								</ul>
+							</fieldset>
 
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-03.png" alt="Collection card 03">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Agnes top</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-04.png" alt="Collection card 04">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Sylva sweater</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-					</ul>
+							<input type="submit" value="Continue">
+						</form>
+					</div>
 				</div>
-			</section>
+				<!-- //Checkout step -->
 
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">03. Shipping information</h3>
+
+					<div class="checkout-forms">
+					</div>
+				</div>
+				<!-- //Checkout step -->
+
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">04. Shipping method</h3>
+
+					<div class="checkout-forms">
+					</div>
+				</div>
+				<!-- //Checkout step -->
+
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">05. Payment method</h3>
+
+					<div class="checkout-forms">
+					</div>
+				</div>
+				<!-- //Checkout step -->
+
+				<!-- Checkout step -->
+				<div class="checkout-step">
+					<h3 class="checkout-step__title">06. Order review</h3>
+
+					<div class="checkout-forms">
+					</div>
+				</div>
+				<!-- //Checkout step -->
+			</div>
 		</main>
 
 		<section class="cta">
@@ -254,7 +229,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<footer class="footer">
 			<div class="container container--flex-jc">
 				<div class="footer-desc">

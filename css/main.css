@@ -3598,8 +3598,10 @@ section {
   width: 280px;
 }
 
-.header-cart {
-  margin-right: 15px;
+.header-cart,
+.header-cart:visited {
+  color: #222222;
+  margin-right: 26px;
 }
 
 .header-nav {
