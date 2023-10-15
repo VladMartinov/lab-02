@@ -101,8 +101,8 @@
       cursor: pointer;
 
 
-      &:has(input[type="radio"]:checked)::before,
-      &:has(input[type="radio"]:not(checked))::before {
+      &:has(input[type="radio"]:checked):before,
+      &:has(input[type="radio"]:not(:checked)):before {
         position: absolute;
         content: "";
 
@@ -117,8 +117,8 @@
         background-color: #ffffff;
       }
 
-      &:has(input[type="radio"]:checked)::after,
-      &:has(input[type="radio"]:not(:checked))::after {
+      &:has(input[type="radio"]:checked):after,
+      &:has(input[type="radio"]:not(:checked)):after {
         content: "";
         position: absolute;
 

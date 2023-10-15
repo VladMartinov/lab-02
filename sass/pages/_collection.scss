@@ -1,3 +1,11 @@
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(10deg); }
+ 95% { transform: rotate(-10deg); }
+100% { transform: rotate(0deg); }
+}
+
 .collection {
   background-color: #ffffff;
 
@@ -133,7 +141,10 @@
   height: 55px;
 
   border: 1px solid #ef5b70;
+  background-color: #ffffff;
   color: #ef5b70;
+
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
 
   & > .fa {
     margin-right: 15px;
@@ -142,6 +153,15 @@
   &-text {
     font-size: 16px;
     font-weight: 700;
+  }
+
+  &:hover {
+    background-color: #ef5b70;
+    color: #ffffff;
+
+    & > .fa {
+      animation: wiggle 2.5s infinite;
+    }
   }
 }
 

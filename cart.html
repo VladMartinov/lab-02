@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title and SEO -->
-		<title>BRAND - Коллекция</title>
+		<title>BRAND - Корзина</title>
 		<meta name="description" content="Описание страницы" />
 		<meta name="keywords" content="ключевые слова, фразы" />
 
@@ -74,150 +74,153 @@
 			</div>
 		</section>
 
-		<main class="collection">
-			<section class="collection-slider">
+		<main class="cart">
+			<div class="container">
+				<table class="cart-table">
+					<thead>
+						<tr>
+							<th>Product details</th>
+							<th>Unite price</th>
+							<th>Quantity</th>
+							<th>Shipping</th>
+							<th>Subtotal</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Table item -->
+						<tr class="cart-item">
+							<td class="cart-item__details">
+								<img src="./assets/images/cart/item-1.jpg" alt="Cart item image">
 
-				<div class="slider">
-					<div class="slider-items">
-						<div class="slider__item">
-							<img src="./assets/images/item-collections/slider/main-card-01.png" alt="Card collection 01">
+								<div class="cart-item__details-text">
+									<h4>Mango people t-shirt</h4>
+									<p>Color: <span>Red</span></p>
+									<p>Size: <span>X4</span></p>
+								</div>
+							</td>
+							<td class="cart-item__price">
+								<span>$150</span>
+							</td>
+							<td class="cart-item__quantity">
+								<input type="number" value="2" min="1">
+							</td>
+							<td class="cart-item__shipping">
+								<span>Free</span>
+							</td>
+							<td class="cart-item__total">
+								<span>$300</span>
+							</td>
+							<td class="cart-item__action">
+								<i class="fa fa-times-circle"></i>
+							</td>
+						</tr>
+						<!-- // Table item -->
+
+						<!-- Table item -->
+						<tr class="cart-item">
+							<td class="cart-item__details">
+								<img src="./assets/images/cart/item-2.jpg" alt="Cart item image">
+
+								<div class="cart-item__details-text">
+									<h4>Mango people t-shirt</h4>
+									<p>Color: <span>Red</span></p>
+									<p>Size: <span>X4</span></p>
+								</div>
+							</td>
+							<td class="cart-item__price">
+								<span>$150</span>
+							</td>
+							<td class="cart-item__quantity">
+								<input type="number" value="2" min="1">
+							</td>
+							<td class="cart-item__shipping">
+								<span>Free</span>
+							</td>
+							<td class="cart-item__total">
+								<span>$300</span>
+							</td>
+							<td class="cart-item__action">
+								<i class="fa fa-times-circle"></i>
+							</td>
+						</tr>
+						<!-- // Table item -->
+
+						<!-- Table item -->
+						<tr class="cart-item">
+							<td class="cart-item__details">
+								<img src="./assets/images/cart/item-3.jpg" alt="Cart item image">
+
+								<div class="cart-item__details-text">
+									<h4>Mango people t-shirt</h4>
+									<p>Color: <span>Red</span></p>
+									<p>Size: <span>X4</span></p>
+								</div>
+							</td>
+							<td class="cart-item__price">
+								<span>$150</span>
+							</td>
+							<td class="cart-item__quantity">
+								<input type="number" value="2" min="1">
+							</td>
+							<td class="cart-item__shipping">
+								<span>Free</span>
+							</td>
+							<td class="cart-item__total">
+								<span>$300</span>
+							</td>
+							<td class="cart-item__action">
+								<i class="fa fa-times-circle"></i>
+							</td>
+						</tr>
+						<!-- // Table item -->
+					</tbody>
+				</table>
+
+				<div class="cart-buttons">
+					<button class="cart-buttons__btn">Clear shopping cart</button>
+					<button class="cart-buttons__btn">Continue shopping</button>
+				</div>
+
+				<div class="cart-purchase">
+					<form action="" class="cart-purchase-form">
+						<fieldset>
+							<legend>Shipping aress</legend>
+
+							<div class="cart-purchase-form__select">
+								<div class="cart-purchase-form__select-btn">
+									<span>Bangladesh</span>
+									<i class="fa fa-caret-down"></i>
+								</div>
+							</div>
+							<input type="text" name="substate" placeholder="State" required>
+							<input type="text" name="postcode-zip" placeholder="Postcode / Zip" required>
+						</fieldset>
+
+						<input type="submit" value="Get a quote">
+					</form>
+
+					<form action="" class="cart-purchase-form">
+						<fieldset>
+							<legend>Coupon discount</legend>
+							<span>Enter your coupon code if you have one</span>
+
+							<input type="text" name="substate" placeholder="State" required>
+						</fieldset>
+
+						<input type="submit" value="Apply coupon">
+					</form>
+
+					<div class="cart-purchase-results">
+						<div class="cart-purchase-results-text">
+							<h5>Sub total<span>$900</span></h5>
+							<h3>Grand total<span>$900</span></h3>
 						</div>
-					</div>
 
-					<div class="slider__arrow-left"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></div>
-					<div class="slider__arrow-right"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></div>
-				</div>
-			</section>
-
-			<section class="collection-card">
-				<div class="container">
-					<div class="collection-card__wrapper">
-						<span class="collection-card__type">women collection</span>
-						<h4 class="collection-card__title title-4">Moschino cheap and chic</h4>
-
-						<div class="collection-card__desc">
-							<p class="collection-card__desc-text">
-								Compellingly actualize fully researched processes before proactive outsourcing.
-								Progressively syndicate collaborative architectures before cutting-edge services.
-								Completely visualize parallel core competencies rather than exceptional portals.
-							</p>
-							<div class="collection-card-params">
-								<p>Material: <span>cotton</span></p>
-								<p>designer: <span>binburhan</span></p>
-							</div>
-							<span class="collection-card__price">$561</span>
-						</div>
-
-						<form class="collection-settings">
-							<div class="collection-settings__wrapper">
-								<fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Choose color</legend>
-								 <div class="select">
-									 <button class="select__btn" type="button">
-										 <div class="select__btn-color pink"></div>
-										 <span class="select__btn-text">Red</span>
-										 <i class="fa fa-angle-down" aria-hidden="true"></i>
-									 </button>
-								 </div>
-							 </fieldset>
-
-							 <fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Choose size</legend>
-								 <div class="select">
-									 <button class="select__btn" type="button">
-										 <span class="select__btn-text">XXL</span>
-										 <i class="fa fa-angle-down" aria-hidden="true"></i>
-									 </button>
-								 </div>
-							 </fieldset>
-
-							 <fieldset class="collection-settings__input">
-								 <legend class="collection-settings__input-title">Quantity</legend>
-								 <input type="number" class="input" placeholder="2">
-							 </fieldset>
-							</div>
-
-							<button type="submit" class="collection-settings__submit">
-								<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-								<span class="collection-settings__submit-text">Add to cart</span>
-							</button>
-						</form>
+						<a href="./checkout.html" type="button">Poceed to checkout</a>
 					</div>
 				</div>
-			</section>
-
-			<section class="collection-offers">
-				<div class="container">
-					<h2 class="collection-offers__title title-2 black">You may like also</h2>
-
-					<ul class="collection-offers__list">
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-01.png" alt="Collection card 01">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Blaze leggings</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-02.png" alt="Collection card 02">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Alexa sweater</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-03.png" alt="Collection card 03">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Agnes top</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-
-						<!-- Collection card -->
-						<li class="product-item">
-							<div class="product-image__wrapper">
-								<img src="./assets/images/item-collections/rec/card-04.png" alt="Collection card 04">
-								<div class="product-image-button__wrapper">
-									<button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</button>
-								</div>
-							</div>
-
-							<div class="product-item__desc">
-								<p class="product-item__title">Sylva sweater</p>
-								<p class="product-item__price">$52.00</p>
-							</div>
-						</li>
-						<!-- //Collection card -->
-					</ul>
-				</div>
-			</section>
-
+			</div>
 		</main>
 
 		<section class="cta">
@@ -258,7 +261,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<footer class="footer">
 			<div class="container container--flex-jc">
 				<div class="footer-desc">

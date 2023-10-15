@@ -45,6 +45,8 @@
   text-transform: uppercase;
   color: #6f6e6e;
 
+  cursor: pointer;
+
   &::before {
     position: absolute;
     content: "";
@@ -74,6 +76,11 @@
 }
 .aside-list-item__text {
   color: #6f6e6e;
+  cursor: pointer;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: #eb5b70;
+  }
 }
 
 /* Top Filter */
