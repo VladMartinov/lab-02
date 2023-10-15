@@ -3,6 +3,11 @@
 
   &__wrapper {
     display: flex;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -13,6 +18,16 @@
   width: 245px;
 
   flex-shrink: 0;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 180px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin: 0 auto 50px;
+  }
 }
 
 .products-aside-item {
@@ -94,10 +109,23 @@
   justify-content: space-between;
 
   margin-bottom: 40px;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .products-filter-item {
   width: 262px;
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
 }
 .products-filter-item__title {
   display: inline-block;
@@ -106,6 +134,12 @@
   text-transform: uppercase;
   font-weight: 700;
   color: #6f6e6e;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .products-filter-list {
@@ -187,6 +221,11 @@
 
   column-gap: 30px;
   row-gap: 38px;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    row-gap: 19px;
+  }
 }
 
 /* Bottom sort */
@@ -200,6 +239,12 @@
   width: 100%;
 
   background-color: #f3f3f3;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    flex-direction: column;
+    row-gap: 15px;
+  }
 }
 
 .product-sort-item {
@@ -226,6 +271,11 @@
 
   &:not(:last-child) {
     margin-right: 10px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -245,6 +295,22 @@
 
   & > *:not(:last-child) {
     margin-right: 12px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+      margin-right: 6px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      font-size: 13px;
+      margin-right: 3px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    padding: 9px 8px;
   }
 }
 .product-pagination__item {
@@ -274,4 +340,13 @@
   font-weight: 300;
   line-height: 44px;
   color: #ef5b70;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    padding: 0 25px;
+  }
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    padding: 0 20px;
+  }
 }

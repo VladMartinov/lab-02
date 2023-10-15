@@ -2,6 +2,11 @@
   position: relative;
   height: 777px;
   background-color: #f7f7f7;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    height: 460px;
+  }
 }
 
 .slider-items {
@@ -26,6 +31,15 @@
 
       transform: scale(1.2);
     }
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 360px;
+  }
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    width: 290px;
   }
 }
 

@@ -37,6 +37,11 @@
   }
   &-dropdown {
     padding-left: 16px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+      padding: 3px 5px;
+    }
   }
   &-browse {
     padding: 0 20px 0 25px;

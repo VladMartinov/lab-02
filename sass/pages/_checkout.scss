@@ -13,6 +13,13 @@
 
   &.active .checkout-forms {
     display: flex;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      flex-direction: column;
+
+      row-gap: 30px;
+    }
   }
 }
 .checkout-step__title {
@@ -26,6 +33,11 @@
   display: none;
 
   padding: 35px 30px;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    padding: 35px 0;
+  }
 }
 
 .checkout-form {
@@ -50,6 +62,11 @@
     &:hover {
       background-color: #eaeaea;
     }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+      padding: 0 25px;
+    }
   }
 
   & .forgot-password {
@@ -57,10 +74,30 @@
 
     font-size: 14px;
     color: #222222;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+      margin-left: 10px;
+    }
   }
 
   &:not(:last-child) {
     margin-right: 160px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+      margin-right: 40px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 320px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    width: 280px;
   }
 }
 

@@ -16,6 +16,10 @@
 
 .collection-slider {
   margin-bottom: -85px;
+  /* Mobile */
+  @media (max-width: 899px) {
+    margin-bottom: -25px;
+  }
 }
 
 /* Card info section */
@@ -29,6 +33,20 @@
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     text-align: center;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+      padding: 35px 70px 60px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      padding: 20px 45px 40px;
+    }
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-bottom: 60px;
   }
 }
 
@@ -63,12 +81,23 @@
 }
 .collection-card__title {
   margin-bottom: 65px;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-bottom: 20px;
+  }
 }
 
 .collection-card__desc {
   margin-bottom: 60px;
   padding-bottom: 40px;
   border-bottom: 1px solid #eaeaea;
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 .collection-card__desc-text {
@@ -115,6 +144,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      flex-direction: column;
+      row-gap: 25px;
+    }
   }
 }
 
@@ -129,6 +164,11 @@
     color: #2f2f2f;
     font-weight: 700;
     text-align: left;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -153,6 +193,11 @@
   &-text {
     font-size: 16px;
     font-weight: 700;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      font-size: 14px;
+    }
   }
 
   &:hover {

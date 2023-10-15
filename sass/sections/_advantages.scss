@@ -1,6 +1,15 @@
 
 /* Advantages section */
 
+.advantages {
+  /* Mobile */
+  @media (max-width: 899px) {
+    & .container--flex {
+      flex-direction: column;
+    }
+  }
+}
+
 .advantages.bg {
   background-color: #222224;
 }
@@ -13,6 +22,16 @@
 
   width: 100%;
   height: 544px;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    height: 390px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    height: 290px;
+  }
 }
 
 .advantages-left__wrapper {
@@ -21,12 +40,25 @@
   top: 150px;
   left: 35px;
 
+  /* Mobile */
+  @media (max-width: 899px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 }
 .advantages-left__text-big,
 .advantages-left__text {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    text-align: center;
+  }
 }
 .advantages-left__text-big {
   display: inline-block;
@@ -36,14 +68,39 @@
   & span {
     color: #f16d7f;
   }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    font-size: 34px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    font-size: 24px;
+  }
 }
 .advantages-left__text {
   font-size: 32px;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    font-size: 24px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    font-size: 18px;
+  }
 }
 
 .advantages-right {
   padding: 48px 25px;
   background-color: #222224;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 100%;
+  }
 
   &:first-child {
     width: 100%;
@@ -53,6 +110,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+        flex-direction: column;
+        row-gap: 25px;
+      }
     }
 
     .advantages-item {
@@ -68,6 +131,16 @@
 
     .advantages-item__icon {
       margin: 0 0 30px 0;
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+      padding: 40px 0 50px;
     }
   }
 }
@@ -78,6 +151,19 @@
 
   &:not(:last-child) {
     margin-bottom: 50px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+      margin-bottom: 26px;
+    }
+  }
+  /* Mobile */
+  @media (max-width: 899px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin: 0 auto;
   }
 }
 
@@ -88,6 +174,11 @@
   height: 100%;
 
   transition: transform 0.75s ease-in-out;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    margin: 0 0 15px 0;
+  }
 
   &:hover {
     transform: rotate(360deg);
