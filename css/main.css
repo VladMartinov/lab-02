@@ -3607,7 +3607,7 @@ section {
   width: 100%;
   height: 100%;
   background-color: #e9e9e9;
-  object-fit: contain;
+  object-fit: cover;
 }
 @media (max-width: 899px) {
   .product-image__wrapper {
