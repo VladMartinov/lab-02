@@ -152,7 +152,7 @@
   line-height: normal;
 
   &.text {
-    & label span {
+    & span {
       color: #e8e8e8;
       margin-left: 12px;
     }
@@ -162,7 +162,7 @@
   
       & label {
         margin-right: 24px;
-        &:has(span) {
+        &:not(:last-child) {
           margin-right: 0;
         }
       }

@@ -91,13 +91,15 @@
 					<h3 class="checkout-step__title">01. Shipping adress</h3>
 
 					<div class="checkout-forms">
-						<form class="checkout-form" action="">
+						<form class="checkout-form">
 							<fieldset class="checkout-fieldset checkout-fieldset--radio">
 								<legend>Check as a guest or register</legend>
 								<span>Register with us future convenience</span>
 
-								<label><input type="radio" class="visually-hidden" name="user-type" value="user-guest" checked>Checkout as guest</label>
-								<label><input type="radio" class="visually-hidden" name="user-type" value="user-register">Register</label>
+								<input type="radio" class="visually-hidden" id="user-guest" name="user-type" value="user-guest" checked>
+								<label for="user-guest">Checkout as guest</label>
+								<input type="radio" class="visually-hidden" id="user-register" name="user-type" value="user-register">
+								<label for="user-register">Register</label>
 							</fieldset>
 
 							<fieldset class="checkout-fieldset checkout-fieldset--list">
@@ -113,19 +115,15 @@
 							<input type="submit" value="Continue">
 						</form>
 
-						<form class="checkout-form" action="">
+						<form class="checkout-form">
 							<fieldset class="checkout-fieldset checkout-fieldset--input">
 								<legend>Already registed?</legend>
 								<span>Please log in below</span>
 
-								<label>
-									<span>Email adress</span>
-									<input type="email" name="user-mail" required>
-								</label>
-								<label>
-									<span>Password</span>
-									<input type="password" name="user-password" required>
-								</label>
+								<label for="email-input"><span>Email adress</span></label>
+								<input type="email" id="email-input" name="user-mail" required>
+								<label for="password-input"><span>Password</span></label>
+								<input type="password" id="password-input" name="user-password" required>
 
 								<span class="checkout-fieldset__desc">* Required Fields</span>
 							</fieldset>
@@ -142,13 +140,15 @@
 					<h3 class="checkout-step__title">02. Billing information</h3>
 
 					<div class="checkout-forms">
-						<form class="checkout-form" action="">
+						<form class="checkout-form">
 							<fieldset class="checkout-fieldset checkout-fieldset--radio">
 								<legend>Check as a guest or register</legend>
 								<span>Register with us future convenience</span>
 
-								<label><input type="radio" class="visually-hidden" name="user-type" value="user-guest" checked>Checkout as guest</label>
-								<label><input type="radio" class="visually-hidden" name="user-type" value="user-register">Register</label>
+								<input type="radio" class="visually-hidden" id="user-guest-test" name="user-type" value="user-guest" checked>
+								<label for="user-guest-test">Checkout as guest</label>
+								<input type="radio" class="visually-hidden" id="user-register-test" name="user-type" value="user-register">
+								<label for="user-register-test">Register</label>
 							</fieldset>
 
 							<fieldset class="checkout-fieldset checkout-fieldset--list">
